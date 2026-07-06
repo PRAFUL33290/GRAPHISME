@@ -87,11 +87,12 @@
   border: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  overflow-y: auto;
 }
 .viewer:fullscreen .viewer-frame {
   aspect-ratio: auto;
-  flex: 1;
+  flex: 1 0 auto;
+  min-height: 60vh;
   border-bottom: none;
 }
 .viewer:fullscreen .viewer-caption {

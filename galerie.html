@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie — Festival Arc-en-Ciel</title>
+<meta name="description" content="Parcours en plein écran les 20 affiches du Festival Arc-en-Ciel, style par style.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="galerie.css">
+</head>
+<body class="page-galerie">
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient-orb ambient-orb--1"></div>
+  <div class="ambient-orb ambient-orb--2"></div>
+  <div class="ambient-orb ambient-orb--3"></div>
+</div>
+
+<div class="confetti-bar" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Festival Arc-en-Ciel</a>
+  <div class="nav-links">
+    <a href="index.html">Les affiches</a>
+    <a href="histoire.html">L'histoire</a>
+    <a href="deroulement.html">Déroulé de l'atelier</a>
+    <a href="galerie.html" class="nav-active" aria-current="page">Galerie</a>
+  </div>
+</nav>
+
+<header class="hero hero--compact">
+  <div class="eyebrow">🖼️ Mode galerie</div>
+  <div class="hero-inner">
+    <h1>La galerie <span class="rainbow">plein écran</span></h1>
+    <p class="hero-text">
+      Parcours les 20 affiches du festival les unes après les autres, comme dans une vraie exposition.
+    </p>
+  </div>
+</header>
+
+<main class="galerie-main">
+
+  <div id="viewer" class="viewer">
+    <div class="viewer-frame">
+      <img id="viewer-image" alt="">
+      <div id="viewer-placeholder" class="viewer-placeholder">
+        <span class="placeholder-emoji" id="viewer-emoji">🎨</span>
+        <span>Image à venir</span>
+      </div>
+
+      <button id="viewer-prev" class="viewer-nav viewer-nav--prev" type="button" aria-label="Affiche précédente">‹</button>
+      <button id="viewer-next" class="viewer-nav viewer-nav--next" type="button" aria-label="Affiche suivante">›</button>
+      <button id="viewer-fullscreen" class="viewer-fullscreen-btn" type="button" aria-label="Plein écran">⛶</button>
+    </div>
+
+    <div class="viewer-caption">
+      <span class="viewer-num" id="viewer-num">Affiche n°1</span>
+      <h2 id="viewer-title">Minimaliste</h2>
+      <p id="viewer-kid"></p>
+      <p class="viewer-counter"><span id="viewer-index">1</span> / <span id="viewer-total">20</span></p>
+    </div>
+  </div>
+
+  <div id="thumb-strip" class="thumb-strip"></div>
+
+</main>
+
+<footer class="site-footer">
+  <p>Festival Arc-en-Ciel — 20 affiches, une seule exposition.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="galerie.js"></script>
+</body>
+</html>

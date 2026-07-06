@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'histoire des styles — Festival Arc-en-Ciel</title>
+<meta name="description" content="Découvre l'origine des 20 styles graphiques utilisés pour créer les affiches du Festival Arc-en-Ciel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-histoire">
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient-orb ambient-orb--1"></div>
+  <div class="ambient-orb ambient-orb--2"></div>
+  <div class="ambient-orb ambient-orb--3"></div>
+</div>
+
+<div class="confetti-bar" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Festival Arc-en-Ciel</a>
+  <div class="nav-links">
+    <a href="index.html">Les affiches</a>
+    <a href="histoire.html" class="nav-active" aria-current="page">L'histoire</a>
+    <a href="deroulement.html">Déroulé de l'atelier</a>
+    <a href="galerie.html">Galerie</a>
+  </div>
+</nav>
+
+<header class="hero hero--compact">
+  <div class="hero-inner">
+    <p class="eyebrow">Du Bauhaus au Cyberpunk</p>
+    <h1>L'histoire derrière <span class="rainbow">chaque style</span></h1>
+    <p class="hero-text">
+      Avant de créer ton affiche, découvre d'où viennent ces styles graphiques.
+    </p>
+    <p class="hero-text">
+      Chaque mouvement raconte une époque.<br>
+      <strong>Chaque affiche du festival peut s'en inspirer.</strong>
+    </p>
+  </div>
+</header>
+
+<main class="histoire-main">
+
+  <section class="histoire-intro" aria-labelledby="histoire-intro-title">
+    <div class="histoire-intro-card">
+      <p class="histoire-intro-label">Pourquoi cette page ?</p>
+      <h2 id="histoire-intro-title">Plus d'un siècle de graphisme</h2>
+      <p class="histoire-intro-lead">
+        Chaque style est le reflet d'une époque, d'une culture ou d'un mouvement artistique.
+      </p>
+      <p>
+        Les affiches du Festival Arc-en-Ciel s'inspirent de ces innovations.
+        Comprendre leurs origines, c'est mieux les utiliser — et raconter une vraie histoire à travers ta création.
+      </p>
+    </div>
+  </section>
+
+  <nav class="histoire-toc" aria-label="Sommaire des styles">
+    <p class="toc-label">Aller directement à un style</p>
+    <div class="toc-links" id="histoire-toc"></div>
+  </nav>
+
+  <div class="histoire-section-head">
+    <h2>Les mouvements à découvrir</h2>
+    <p>19 styles expliqués — du Bauhaus au style Premium.</p>
+  </div>
+
+  <div id="histoire-list" class="histoire-list"></div>
+
+  <section class="histoire-outro">
+    <div class="histoire-outro-card">
+      <h2>Et maintenant ?</h2>
+      <div class="histoire-outro-text" id="histoire-conclusion"></div>
+      <a class="cta-btn" href="index.html">Voir les 20 affiches du festival</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Festival Arc-en-Ciel — Explorer le graphisme à travers la fête.</p>
+</footer>
+
+<script src="histoire-data.js"></script>
+<script src="histoire.js"></script>
+</body>
+</html>

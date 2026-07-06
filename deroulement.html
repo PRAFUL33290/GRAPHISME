@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Déroulé de l'atelier — Festival Arc-en-Ciel</title>
+<meta name="description" content="Le déroulé complet de l'atelier : deviner le style, créer sa consigne d'affiche, choisir son image parmi 3 générations, puis composer sa musique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="deroulement.css">
+</head>
+<body class="page-deroulement">
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient-orb ambient-orb--1"></div>
+  <div class="ambient-orb ambient-orb--2"></div>
+  <div class="ambient-orb ambient-orb--3"></div>
+</div>
+
+<div class="confetti-bar" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Festival Arc-en-Ciel</a>
+  <div class="nav-links">
+    <a href="index.html">Les affiches</a>
+    <a href="histoire.html">L'histoire</a>
+    <a href="deroulement.html" class="nav-active" aria-current="page">Déroulé de l'atelier</a>
+    <a href="galerie.html">Galerie</a>
+  </div>
+</nav>
+
+<header class="hero hero--compact">
+  <div class="eyebrow">🎬 Étape par étape</div>
+  <div class="hero-inner">
+    <h1>Le déroulé de <span class="rainbow">l'atelier</span></h1>
+    <p class="hero-text">
+      Quatre étapes pour transformer une feuille blanche en affiche de festival — puis en musique.
+    </p>
+  </div>
+</header>
+
+<main class="deroulement-main">
+
+  <nav class="wizard-steps" aria-label="Étapes de l'atelier">
+    <a href="#etape-1" class="wizard-step-nav"><span>1</span>Devine le style</a>
+    <a href="#etape-2" class="wizard-step-nav"><span>2</span>Écris ta consigne</a>
+    <a href="#etape-3" class="wizard-step-nav"><span>3</span>Choisis ton affiche</a>
+    <a href="#etape-4" class="wizard-step-nav"><span>4</span>Crée ta musique</a>
+  </nav>
+
+  <!-- ÉTAPE 1 -->
+  <section id="etape-1" class="step-section" aria-labelledby="etape-1-title">
+    <div class="step-head">
+      <span class="step-badge" style="--accent:#FF5C7A">Étape 1</span>
+      <h2 id="etape-1-title">Devine le style !</h2>
+      <p>L'animateur montre une affiche exemple. À l'aide de la banque de mots ci-dessous, l'équipe doit deviner de quel style graphique il s'agit.</p>
+    </div>
+
+    <div class="quiz-card">
+      <div class="quiz-image-wrap">
+        <img id="quiz-image" alt="Exemple d'affiche à deviner">
+        <div id="quiz-placeholder" class="quiz-placeholder">🖼️ Image à venir</div>
+      </div>
+      <div class="quiz-body">
+        <p class="quiz-instructions">Clique sur le style que tu penses reconnaître :</p>
+        <div id="quiz-options" class="quiz-options"></div>
+        <p id="quiz-feedback" class="quiz-feedback" aria-live="polite"></p>
+        <button id="quiz-next" type="button" class="ghost-btn">Afficher une autre affiche →</button>
+      </div>
+    </div>
+
+    <details class="word-bank">
+      <summary>📖 Banque de mots — tous les styles possibles</summary>
+      <div id="word-bank-list" class="word-bank-list"></div>
+    </details>
+  </section>
+
+  <!-- ÉTAPE 2 -->
+  <section id="etape-2" class="step-section" aria-labelledby="etape-2-title">
+    <div class="step-head">
+      <span class="step-badge" style="--accent:#FFD23F">Étape 2</span>
+      <h2 id="etape-2-title">Écris ta consigne, avant de générer</h2>
+      <p>Avant de lancer la génération de l'affiche A3, l'équipe doit être précise : le style, le contenu, et la date du festival (attention aux jours fériés !).</p>
+    </div>
+
+    <div class="brief-form-card">
+      <div class="form-row">
+        <label for="form-style">1. Quel style graphique ?</label>
+        <select id="form-style"></select>
+      </div>
+
+      <div class="form-row">
+        <label for="form-content">2. Qu'est-ce qu'on met dedans ? (personnages, décor, ambiance, couleurs, texte…)</label>
+        <textarea id="form-content" rows="3" placeholder="Ex : une scène de concert le soir, une foule joyeuse, des food trucks, des guirlandes lumineuses, le nom du festival en grand…"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label for="form-date">3. Quelle est la date du festival ?</label>
+        <input type="date" id="form-date">
+        <p id="date-warning" class="date-warning" hidden></p>
+        <p class="form-hint">💡 Vérifie que la date n'est pas un jour férié — sauf si c'est fait exprès pour l'histoire du festival !</p>
+      </div>
+
+      <div class="form-row">
+        <p class="form-hint form-hint--strong">⚠️ Plus la consigne est précise (style + contenu + date + lieu + ambiance), plus l'affiche générée ressemblera à ce que l'équipe imagine. Vous avez droit à <strong>3 générations</strong> maximum.</p>
+      </div>
+
+      <div class="form-row">
+        <label>Consigne finale à donner pour la génération</label>
+        <div id="prompt-output" class="prompt-output">Remplis les champs ci-dessus pour voir ta consigne se construire ici.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 3 -->
+  <section id="etape-3" class="step-section" aria-labelledby="etape-3-title">
+    <div class="step-head">
+      <span class="step-badge" style="--accent:#37C6A8">Étape 3</span>
+      <h2 id="etape-3-title">Choisis ton affiche parmi 3 générations</h2>
+      <p>L'animateur génère 3 versions de l'affiche à partir de la consigne. Dépose chaque image dans une case ci-dessous : elles s'affichent côte à côte pour comparer.</p>
+    </div>
+
+    <div class="slots-warning">
+      🖨️ <strong>Attention, comme à l'imprimerie :</strong> une fois qu'une image est cliquée pour être validée, c'est <strong>définitif</strong>. Impossible de revenir en arrière, alors regardez bien toutes les propositions avant de choisir !
+    </div>
+
+    <div id="image-slots" class="image-slots"></div>
+
+    <div id="validation-result" class="validation-result" hidden></div>
+    <button id="reset-slots" type="button" class="ghost-btn" hidden>🔄 Recommencer avec une nouvelle équipe</button>
+  </section>
+
+  <!-- ÉTAPE 4 -->
+  <section id="etape-4" class="step-section" aria-labelledby="etape-4-title">
+    <div class="step-head">
+      <span class="step-badge" style="--accent:#B15CFF">Étape 4</span>
+      <h2 id="etape-4-title">Crée ta musique</h2>
+      <p>Dernière étape : composer une musique qui correspond à l'ambiance de l'affiche validée. Le style graphique doit se retrouver dans le style musical !</p>
+    </div>
+
+    <div class="music-card">
+      <div class="form-row">
+        <label for="music-genre">Quel style musical colle avec ton affiche ?</label>
+        <input type="text" id="music-genre" placeholder="Ex : électro synthwave, orchestral épique, pop festive, lo-fi rêveur…">
+      </div>
+      <div class="form-row">
+        <label for="music-notes">Décris l'ambiance sonore (instruments, tempo, voix, effets…)</label>
+        <textarea id="music-notes" rows="3" placeholder="Ex : tempo rapide, synthés années 80, une voix qui scande le nom du festival, des applaudissements de foule en fond…"></textarea>
+      </div>
+      <div id="music-recap" class="music-recap"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Festival Arc-en-Ciel — De l'idée à l'affiche, puis à la musique.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="deroulement.js"></script>
+</body>
+</html>

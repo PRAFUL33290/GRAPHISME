@@ -1,0 +1,89 @@
+FESTIVAL ARC-EN-CIEL — RÈGLES D'ANIMATION DE L'ATELIER
+========================================================
+
+OBJECTIF
+--------
+Faire vivre à chaque équipe le parcours complet d'un festival graphique :
+deviner un style, écrire une consigne précise, obtenir une affiche A3
+générée par IA, la choisir définitivement, puis composer une musique en
+cohérence avec cette affiche.
+
+MATÉRIEL NÉCESSAIRE
+--------------------
+- Un ordinateur / tablette par équipe (ou un poste animateur partagé)
+- La page web "deroulement.html" ouverte pour chaque équipe
+- Un outil de génération d'images IA côté animateur (l'animateur génère
+  les 3 propositions à partir de la consigne écrite par l'équipe)
+- Le dossier Assets/ avec les 20 exemples d'affiches déjà créées
+- Une feuille "brief du festival" (voir index.html) affichée ou imprimée
+
+DÉCOUPAGE DES ÉQUIPES
+----------------------
+Utiliser l'outil "Répartir les équipes du festival" sur la page d'accueil
+(index.html) pour mélanger les 20 styles graphiques et former les groupes
+en un clic.
+
+DÉROULÉ EN 4 ÉTAPES (page deroulement.html)
+---------------------------------------------
+
+ÉTAPE 1 — DEVINE LE STYLE (5 à 10 min)
+  - L'animateur (ou l'appli) montre une affiche exemple issue des 20 styles.
+  - L'équipe s'aide de la "banque de mots" (liste des 20 styles) pour
+    proposer une réponse.
+  - Objectif pédagogique : apprendre à reconnaître les codes visuels de
+    chaque mouvement graphique avant de devoir en produire un soi-même.
+  - L'animateur peut relancer autant de manches que nécessaire avec le
+    bouton "Afficher une autre affiche".
+
+ÉTAPE 2 — ÉCRIRE LA CONSIGNE (10 à 15 min)
+  - Avant toute génération d'image, l'équipe doit répondre à 3 questions :
+      1. Quel style graphique choisi (parmi les 20) ?
+      2. Qu'est-ce qu'on met dans l'affiche (personnages, décor, ambiance,
+         couleurs, texte, éléments du festival) ?
+      3. Quelle est la date du festival ?
+  - ATTENTION AUX JOURS FÉRIÉS : l'outil vérifie automatiquement si la
+    date choisie tombe un jour férié français et affiche une alerte.
+    Charge à l'équipe de décider si c'est voulu ou à corriger.
+  - Plus la consigne est précise, plus le résultat généré sera fidèle à
+    ce que l'équipe imagine. La consigne finale s'affiche automatiquement
+    et doit être transmise à l'animateur pour lancer la génération.
+  - RÈGLE IMPORTANTE : chaque équipe a droit à 3 générations d'image
+    maximum à partir de sa consigne. Pas de génération supplémentaire :
+    cela encourage à bien réfléchir à la consigne avant de la donner.
+
+ÉTAPE 3 — CHOISIR SON AFFICHE (5 à 10 min)
+  - L'animateur dépose les 3 images générées dans les 3 emplacements
+    prévus sur la page (une image par génération).
+  - Les 3 propositions s'affichent côte à côte pour comparer.
+  - RÈGLE DE L'IMPRIMERIE : dès qu'une équipe clique sur "Valider cette
+    affiche" pour l'une des 3 images, ce choix est DÉFINITIF et
+    IRRÉVERSIBLE, exactement comme un tirage papier chez l'imprimeur.
+    Les deux autres versions sont verrouillées et ne peuvent plus être
+    sélectionnées.
+  - Bien insister auprès des équipes : regarder attentivement les 3
+    versions avant de cliquer, aucun retour en arrière possible.
+
+ÉTAPE 4 — CRÉER SA MUSIQUE (10 à 15 min)
+  - Une fois l'affiche validée, l'équipe décrit un style musical et une
+    ambiance sonore en cohérence avec son affiche (ex : une affiche
+    Cyberpunk appelle plutôt une musique électro/synthwave, une affiche
+    Aquarelle plutôt une musique douce et acoustique).
+  - L'équipe remplit le style musical et les notes d'ambiance sur la
+    page ; une fiche récapitulative se génère automatiquement.
+  - Selon le matériel disponible, cette fiche peut ensuite servir de
+    base à une génération de musique IA ou à une composition live.
+
+CONSEILS POUR L'ANIMATEUR
+---------------------------
+- Circuler entre les équipes pendant l'étape 2 pour aider à préciser
+  les consignes (un brief vague donnera une image décevante).
+- Rappeler la règle des 3 générations AVANT que l'équipe commence à
+  écrire sa consigne, pas après.
+- Rappeler la règle d'irréversibilité de l'étape 3 avant d'envoyer les
+  3 images, pas après le premier clic.
+- Garder une trace (photo/export) de chaque affiche validée et de sa
+  fiche musique pour l'exposition finale des 20 affiches.
+
+DURÉE TOTALE INDICATIVE
+-------------------------
+Environ 45 minutes à 1h par équipe pour les 4 étapes.

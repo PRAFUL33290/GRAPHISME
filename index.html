@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Festival Arc-en-Ciel — 20 styles graphiques à découvrir</title>
+<meta name="description" content="Atelier ludique pour apprendre aux enfants à reconnaître et s'approprier 20 styles graphiques, à partir d'une même affiche de festival.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="confetti-bar" aria-hidden="true"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">🎨 Atelier graphisme pour enfants</p>
+    <h1>Un même festival, <span class="rainbow">20 looks différents</span> !</h1>
+    <p class="hero-text">
+      Le but du jeu : comprendre que la même idée peut se raconter de plein de façons différentes
+      selon le <strong>style graphique</strong> choisi. À vous de repérer les styles,
+      de les tester, et de vous les approprier !
+    </p>
+  </div>
+</header>
+
+<main>
+
+  <section class="brief-section" aria-labelledby="brief-title">
+    <div class="brief-card">
+      <p class="brief-label">📣 La mission, pour tout le monde</p>
+      <h2 id="brief-title">Festival Arc-en-Ciel</h2>
+      <p class="brief-details">15 juin · Parc de la Ville · Concerts, jeux, food trucks et spectacles</p>
+      <p class="brief-help">
+        Chaque groupe imagine l'affiche de <strong>ce même festival</strong>, mais avec un style graphique
+        différent. À la fin, on affiche toutes les créations côte à côte : même événement,
+        vingt ambiances totalement différentes !
+      </p>
+    </div>
+  </section>
+
+  <section class="grid-section" aria-labelledby="grid-title">
+    <div class="grid-heading">
+      <h2 id="grid-title">Les 20 styles à explorer</h2>
+      <p>Clique sur une carte pour lire la consigne complète et l'utiliser pour créer ton affiche.</p>
+    </div>
+    <div id="style-grid" class="style-grid"></div>
+  </section>
+
+  <section class="tool-section" aria-labelledby="tool-title">
+    <div class="tool-card">
+      <h2 id="tool-title">🎡 L'outil de l'animateur·rice</h2>
+      <p>Choisis un nombre de groupes et mélange les styles pour répartir les équipes en un clic.</p>
+      <div class="tool-controls">
+        <label for="group-count">Nombre de groupes</label>
+        <input type="number" id="group-count" min="1" max="20" value="6">
+        <button id="shuffle-btn" type="button">🔀 Mélanger les styles</button>
+      </div>
+      <div id="group-result" class="group-result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="expo-section" aria-labelledby="expo-title">
+    <h2 id="expo-title">🖼️ L'exposition finale</h2>
+    <p>
+      Une fois les affiches terminées, ajoutez vos images dans le dossier <code>images/</code>
+      du projet (une image par style, nommée comme indiqué sous chaque carte) : elles remplaceront
+      automatiquement les cases vides ci-dessus. Ensuite, affichez toutes les créations côte à côte
+      pour que chacun voie à quel point un même festival peut changer de visage !
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Fait avec 🌈 pour aider les enfants à explorer le graphisme.</p>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden>
+  <div class="lightbox-inner">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Fermer">✕</button>
+    <div id="lightbox-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

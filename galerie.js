@@ -36,7 +36,13 @@ function loadGalerieSlide(index) {
     el.classList.toggle("is-active", i === galerieIndex);
   });
   const activeThumb = document.querySelector(`.thumb-item[data-index="${galerieIndex}"]`);
-  if (activeThumb) activeThumb.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  if (activeThumb) {
+    const strip = document.getElementById("thumb-strip");
+    const stripRect = strip.getBoundingClientRect();
+    const thumbRect = activeThumb.getBoundingClientRect();
+    const offset = thumbRect.left - stripRect.left - stripRect.width / 2 + thumbRect.width / 2;
+    strip.scrollBy({ left: offset, behavior: "smooth" });
+  }
 }
 
 function buildThumbStrip() {

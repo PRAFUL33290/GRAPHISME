@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Créations du jour — Festival Arc-en-Ciel</title>
+<meta name="description" content="Le modèle et le résultat final des créations de chaque enfant réalisées aujourd'hui pendant l'atelier.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="creations-du-jour.css">
+</head>
+<body class="page-creations">
+
+<div class="ambient" aria-hidden="true">
+  <div class="ambient-orb ambient-orb--1"></div>
+  <div class="ambient-orb ambient-orb--2"></div>
+  <div class="ambient-orb ambient-orb--3"></div>
+</div>
+
+<div class="confetti-bar" aria-hidden="true"></div>
+
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">Festival Arc-en-Ciel</a>
+  <div class="nav-links">
+    <a href="index.html">Les affiches</a>
+    <a href="histoire.html">L'histoire</a>
+    <a href="deroulement.html">Déroulé de l'atelier</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="creations-du-jour.html" class="nav-active" aria-current="page">Créations du jour</a>
+  </div>
+</nav>
+
+<header class="hero hero--compact">
+  <div class="eyebrow">🖌️ Atelier du jour</div>
+  <div class="hero-inner">
+    <h1>Les <span class="rainbow">créations du jour</span></h1>
+    <p class="hero-text">
+      Pour chaque enfant, retrouve le modèle de départ et le résultat final de sa création.
+    </p>
+  </div>
+</header>
+
+<main class="creations-main">
+  <div id="creations-grid" class="creations-grid"></div>
+</main>
+
+<footer class="site-footer">
+  <p>Festival Arc-en-Ciel — Une création, deux regards : le modèle et le résultat.</p>
+</footer>
+
+<div id="lightbox" class="lightbox" hidden>
+  <div class="lightbox-inner">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Fermer">✕</button>
+    <div id="lightbox-body"></div>
+  </div>
+</div>
+
+<script src="creations-du-jour.js"></script>
+</body>
+</html>
